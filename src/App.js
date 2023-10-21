@@ -8,6 +8,7 @@ function App() {
 
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
+    console.log(selectedIndex);
   };
 
   return (
@@ -69,9 +70,9 @@ function App() {
                       className="h-100 justify-content-center align-items-center"
                       gap={3}
                     >
-                      <Image src={require("./img/7314700-1024x683.jpg")} alt="First" width="auto" height="500"></Image>
-                      <Image src={require("./img/Auf-Franic_Franic_Rister_FFiUF_Rijeka_-6.jpg")} alt="Second" width="auto" height="500"></Image>
-                      <Image src={require("./img/sveucilisni-odjeli-rijeka.jpeg")} alt="Third" width="auto" height="500"></Image>
+                      <Image src={require("./img/image1.jpg")} alt="First" width="auto" height="500"></Image>
+                      <Image src={require("./img/image2.jpg")} alt="Second" width="auto" height="500"></Image>
+                      <Image src={require("./img/image3.jpeg")} alt="Third" width="auto" height="500"></Image>
                     </Stack>
                   </Carousel.Item>
                   <Carousel.Item> 
@@ -80,9 +81,9 @@ function App() {
                       className="h-100 justify-content-center align-items-center"
                       gap={3}
                     >
-                      <Image src={require("./img/e424779921036fc9d0c061f4bf30f0d26457ef78.png")} alt="First" width="auto" height="500"></Image>
-                      <Image src={require("./img/uniri_kampus3.jpg")} alt="Second" width="auto" height="500"></Image>
-                      <Image src={require("./img/university-of-rijeka-8.jpg")} alt="Third" width="auto" height="500"></Image>
+                      <Image src={require("./img/image4.png")} alt="First" width="auto" height="500"></Image>
+                      <Image src={require("./img/image5.jpg")} alt="Second" width="auto" height="500"></Image>
+                      <Image src={require("./img/image6.jpg")} alt="Third" width="auto" height="500"></Image>
                     </Stack>
                   </Carousel.Item>
                 </Carousel>
@@ -91,22 +92,22 @@ function App() {
               <div className='d-block d-md-none'>
                 <Carousel className='bg-white' activeIndex={index} onSelect={handleSelect}>
                   <Carousel.Item> 
-                    <Image src={require("./img/7314700-1024x683.jpg")} alt="First" width="auto" height="500"></Image>
+                    <Image src={require("./img/image1.jpg")} alt="First" width="auto" height="500"></Image>
                   </Carousel.Item>
                   <Carousel.Item>
-                    <Image src={require("./img/Auf-Franic_Franic_Rister_FFiUF_Rijeka_-6.jpg")} alt="Second" width="auto" height="500"></Image>
+                    <Image src={require("./img/image2.jpg")} alt="Second" width="auto" height="500"></Image>
                   </Carousel.Item>
                   <Carousel.Item>
-                    <Image src={require("./img/sveucilisni-odjeli-rijeka.jpeg")} alt="Third" width="auto" height="500"></Image>
+                    <Image src={require("./img/image3.jpeg")} alt="Third" width="auto" height="500"></Image>
                   </Carousel.Item>
                   <Carousel.Item>
-                    <Image src={require("./img/e424779921036fc9d0c061f4bf30f0d26457ef78.png")} alt="Third" width="auto" height="500"></Image>
+                    <Image src={require("./img/image4.png")} alt="Third" width="auto" height="500"></Image>
                   </Carousel.Item>
                   <Carousel.Item>
-                    <Image src={require("./img/uniri_kampus3.jpg")} alt="Third" width="auto" height="500"></Image>
+                    <Image src={require("./img/image5.jpg")} alt="Third" width="auto" height="500"></Image>
                   </Carousel.Item>
                   <Carousel.Item>
-                    <Image src={require("./img/university-of-rijeka-8.jpg")} alt="Third" width="auto" height="500"></Image>
+                    <Image src={require("./img/image6.jpg")} alt="Third" width="auto" height="500"></Image>
                   </Carousel.Item>
                 </Carousel>
               </div>
@@ -117,25 +118,25 @@ function App() {
               <div className='container mt-3 py-4'>
                 <Form>
                   <Row className="mb-3">
-                    <Form.Group as={Col} controlId="formGridName">
+                    <Form.Group as={Col} controlId="formName">
                       <Form.Label>First Name</Form.Label>
                       <Form.Control type="email" placeholder="First name" />
                     </Form.Group>
-                    <Form.Group as={Col} controlId="formGridSurname">
+                    <Form.Group as={Col} controlId="formSurname">
                       <Form.Label>Last Name</Form.Label>
                       <Form.Control type="email" placeholder="Last name" />
                     </Form.Group>
                   </Row>
 
                   <Row className="mb-3">
-                    <Form.Group as={Col} controlId="formGridEmail">
+                    <Form.Group as={Col} controlId="formEmail">
                       <Form.Label>Email</Form.Label>
                       <Form.Control type="email" placeholder="Email" />
                     </Form.Group>
                   </Row>
 
                   <Row className="mb-3">
-                    <Form.Group as={Col} controlId="exampleForm.ControlTextarea1">
+                    <Form.Group as={Col} controlId="formTextarea">
                         <Form.Label>Ask us anything...</Form.Label>
                         <Form.Control as="textarea" placeholder="..." rows={3} />
                     </Form.Group>
