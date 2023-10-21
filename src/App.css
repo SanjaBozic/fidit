@@ -2,7 +2,7 @@
 
 .FIDIT_background{
     position: relative;
-    min-height: 500px;
+    min-height: 450px;
 }
 
 .FIDIT_background .container{
@@ -20,6 +20,12 @@
     width:100%;
     height:100%;
     background-repeat: no-repeat;
-    opacity: 0.4; 
+    opacity: 0.2; 
     z-index: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-cenosco{
+    width: 100px;
 }
