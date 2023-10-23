@@ -143,6 +143,25 @@ The link for all possible css classes that we can use can be checked out [here](
 
 </div>
 ```
+This section is divided in two. The first part is the carousel gallery look when the screen is medium-sized or larger, and the second part is the carousel for mobile screens. The main difference is that in the first part of the carousel, we can see 3 images on one slide, while in the second part, we see only one image on one slide. 
+
+The React Bootstrap components that are used in this section are [Carousel](https://react-bootstrap.netlify.app/docs/components/carousel/), [Stack](https://react-bootstrap.netlify.app/docs/layout/stack/), and [Image](https://react-bootstrap.netlify.app/docs/components/images).  
+
+In the Image component, we see that we are using the require function in the src (source) attribute, that is because we are referencing a local image in React. Another better option would be to first import the image (for example: import image1 from ./img/image1.jpg) or you can also put the image into a variable and use it afterward (for example: const image1 = require("./img/image1.jpg")) and then plug the variable in (for example: < Image src={logo} />). 
+
+The Stack component with the direction="horizontal" allows us to create horizontal layouts. Stacked items are vertically centered by default and only take up their necessary width which is perfect for our 3 images in the carousel.
+
+In our second carousel, we see that we have an onSelect [event](https://react.dev/learn/responding-to-events). This sends us a callback when the active item changes, in our case if the active picture changes. In the example, we added a handleSelect function which sets the activeIndex to the index that is selected, and also console logs the value. activeIndex controls the currently visible slide, so if we change that number to be for example a fixed number, like 2, only the second slide would be visible.
+```tsx
+const [index, setIndex] = useState(0);
+
+const handleSelect = (selectedIndex) => {
+  setIndex(selectedIndex);
+  console.log(selectedIndex);
+};
+```
+We declare a new state variable by calling the [useState Hook](https://legacy.reactjs.org/docs/hooks-state.html). It returns a pair of values, to which we give names. We’re calling our variable index because it holds the photo index on which we are on currently. We initialize it to zero by passing 0 as the only useState argument. The second returned item is itself a function. It lets us update the index so we’ll name it setIndex. When the user triggers the handleSelect event, we call setIndex with a new value. React will then re-render the Carousel component, passing the new index value to it. In our example, it does nothing because that is the usual behavior of the carousel but you can play with it yourself and change it to something else.
+
 ### Contact section
 ```html
 <div id="contact" className='p-2 bg-body-secondary'>
@@ -204,6 +223,7 @@ The link for all possible css classes that we can use can be checked out [here](
   </div>
 </div>
 ```
+It is a simple footer that uses a few Bootstrap css classes. Other than that the only "unusual" code here is the [SVG](https://www.w3schools.com/html/html5_svg.asp) element which is helping us add the company logo in the footer. With the SVG element, we don't need to have an image of the logo in our local files because we already have these vector graphics in XML format.
 
 ## For those who want to play around more
 
