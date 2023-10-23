@@ -1,12 +1,12 @@
 # FIDIT One-page design with React and Bootstrap
 
-This is a small frontend React page created with the help of Bootstrap for a 45 min workshop to show students about React and Bootstrap v5.3.
+This is a small frontend React page created with the help of Bootstrap for a 45-minute workshop to show students about React and Bootstrap v5.3.
 
 If you don't have Node.js, install from here: [Node.js](https://nodejs.org/en/download).
 
 Add Node.js to your path.
 
-## Create a react app with bootstrap
+## Create a react app with Bootstrap
 In the terminal run:
 ```
 npm install -g create-react-app
@@ -14,15 +14,15 @@ npx create-react-app fidit
 cd fidit
 npm install bootstrap@v5.3.2 react-bootstrap
 ```
-Afterwards we will also need:
+Afterward, we will also need:
 ```
 npm i react-scrollspy
 ```
 
 ## Code explanation
-Since we only have 45 min all the page sections including the heading and the footer will be in the App.js file. This is not how it is usually done. Usually, we would create a component for each of the section, footer and header seperately and if you are looking at this code after the workshop feel free to fork it and for a little exercise you could seperate all the sections into components and organize it better. 
+Since we only have 45 min all the page sections including the heading and the footer will be in the App.js file. This is not how it is usually done. Usually, we would create a component for each section, footer, and header separately and if you are looking at this code after the workshop feel free to fork it and for a little exercise you could separate all the sections into components and organize it better. 
 
-If you have no clue how to create components take a look here: [React Components](https://react.dev/learn/your-first-component) and here is an additional link on how to import/export components from different files: [Import/Export component](https://react.dev/learn/importing-and-exporting-components). Each component should be standalone and generic enough so that it can be used throughout the application multiple times (so we don't have to write more duplicate or simmilar code). 
+If you have no clue how to create components take a look here: [React Components](https://react.dev/learn/your-first-component) and here is an additional link on how to import/export components from different files: [Import/Export component](https://react.dev/learn/importing-and-exporting-components). Each component should be standalone and generic enough so that it can be used throughout the application multiple times (so we don't have to write more duplicate or similar code). 
 
 ### Header
 ```html
@@ -59,9 +59,9 @@ If you have no clue how to create components take a look here: [React Components
   </Navbar>
 </ScrollspyNav>
 ```
-Since we are creating a one-page website we will be using [ScrollspyNav](https://www.npmjs.com/package/react-scrollspy-nav) React component. With it when we click on a navigation link in our navbar the scroll will be automatically activated and we will be dragged to the correct section on the page. Other then that, we will be using React Bootstrap components [Navbar](https://react-bootstrap.netlify.app/docs/components/navbar/), Container and [Offcanvas](https://react-bootstrap.netlify.app/docs/components/offcanvas). 
+Since we are creating a one-page website we will be using [ScrollspyNav](https://www.npmjs.com/package/react-scrollspy-nav) React component. With it when we click on a navigation link in our navbar the scroll will be automatically activated and we will be dragged to the correct section on the page. Other than that, we will be using React Bootstrap components [Navbar](https://react-bootstrap.netlify.app/docs/components/navbar/), Container and [Offcanvas](https://react-bootstrap.netlify.app/docs/components/offcanvas). 
 
-We will be using the offcanvas component to build a hidden navigation bar. This navigation bar will be shown if our screen size is smaller then 720px, so it will be for mobile sizes. For Bootstrap screen size breakpoints take a look at this link [here](https://getbootstrap.com/docs/5.3/layout/grid/), but most important thing to remember here is this grid (keep in mind this is the table for the Bootstrap version 5.3):
+We will be using the Offcanvas component to build a hidden navigation bar. This navigation bar will be shown if our screen size is smaller than 720px, so it will be for mobile sizes. For Bootstrap screen size breakpoints take a look at this link [here](https://getbootstrap.com/docs/5.3/layout/grid/), but the most important thing to remember here is this grid (keep in mind this is the table for the Bootstrap version 5.3):
 
 |  | xs | sm | md | lg | xl | xxl |
 |  :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
@@ -82,9 +82,9 @@ We will be using the offcanvas component to build a hidden navigation bar. This 
   </div>
 </div>
 ```
-This section is pretty simple and we are not using any components other then the Button component which is like the name states, a simple button. We could have used the full potential of this component and rather then adding Bootstrap classes on it we could have used the variant option. For more information about what we could do with the React Bootstrap component Button click [here](https://react-bootstrap.netlify.app/docs/components/buttons). 
+This section is pretty simple and we are not using any components other than the Button component which is as the name states, a simple button. We could have used the full potential of this component and rather than adding Bootstrap classes, we could have used the variant option. For more information about what we could do with the React Bootstrap component Button click [here](https://react-bootstrap.netlify.app/docs/components/buttons). 
 
-For now we wanted to look more in depth and show you about all the different bootstrap css classes.
+For now, we wanted to look more in-depth and show you all the different bootstrap css classes.
 The link for all possible css classes that we can use can be checked out [here](https://bootstrapshuffle.com/classes).
 
 ## For those who want to play around more
@@ -99,13 +99,13 @@ If you have no clue how to create components take a look here: [React Components
 
 ### Exercise 02
 
-Rather then using css for styling, create a [scss](https://www.upwork.com/resources/what-is-scss) file, write more styling code or change the whole look of the sections. You can compile you scss styling to css. With [SASS](https://sass-lang.com/) you can not only do all the usuall css coding but more. You can create variables, nest, create styling modules, add mixins, for loops, while, if and else, extend/inherit styling code, use operators (more about this functionalities [here](https://sass-lang.com/guide/)). Nowadays, the css itself has evolved and can also be used to create variables and nest but there is still some functionalities that are missing and that is why SCSS is so useful. With it you can easier create theming, animations and other useful styling.
+Rather then using css for styling, create a [scss](https://www.upwork.com/resources/what-is-scss) file, write more styling code or change the whole look of the sections. You can compile your scss styling to css. With [SASS](https://sass-lang.com/) you can not only do all the usual css coding but more. You can create variables, nest, create styling modules, add mixins, for loops, while, if and else, extend/inherit styling code, use operators (more about these functionalities [here](https://sass-lang.com/guide/)). Nowadays, the css itself has evolved and can also be used to create variables and nest but there are still some functionalities that are missing and that is why SCSS is so useful. With it, you can easily create theming, animations, and other useful styling.
 
-[Visual Studio Code](https://code.visualstudio.com/download) has a helpful extension for scss. It will track your scss file, one you save the file it will automatically compile it for you and show you your changes (if you of course imported the compiled css file). Read more about this extension here [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass).
+[Visual Studio Code](https://code.visualstudio.com/download) has a helpful extension for scss. It will track your scss file. Once you save the file it will automatically compile it for you and show you your changes (if you of course imported the compiled css file). Read more about this extension here [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass).
 
 ### Exercise 03
 
-If you want to add a bit more character to the whole page I suggest you go and install the [FontAwesome](https://fontawesome.com/) icon library. They have a free and paid option (with the free option you will have more then enough icons to play with don't worry). 
+If you want to add a bit more character to the whole page I suggest you go and install the [FontAwesome](https://fontawesome.com/) icon library. They have a free and paid option (with the free option you will have more than enough icons to play with don't worry). 
 To add the FontAwesome library just go to your terminal and run:
 ```
 npm i --save @fortawesome/fontawesome-svg-core
@@ -113,7 +113,7 @@ npm i --save @fortawesome/free-solid-svg-icons
 npm i --save @fortawesome/free-regular-svg-icons
 npm i --save @fortawesome/free-brands-svg-icons
 ```
-You can also add their fontawesome react component:
+You can also add their FontAwesome react component:
 ```
 npm i --save @fortawesome/react-fontawesome@latest
 ```
