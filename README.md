@@ -59,7 +59,7 @@ If you have no clue how to create components take a look here: [React Components
   </Navbar>
 </ScrollspyNav>
 ```
-Since we are creating a one-page website we will be using [ScrollspyNav](https://www.npmjs.com/package/react-scrollspy-nav) React component. With it when we click on a navigation link in our navbar the scroll will be automatically activated and we will be dragged to the correct section on the page. Other than that, we will be using React Bootstrap components [Navbar](https://react-bootstrap.netlify.app/docs/components/navbar/), Container and [Offcanvas](https://react-bootstrap.netlify.app/docs/components/offcanvas). 
+Since we are creating a one-page website we will be using [ScrollspyNav](https://www.npmjs.com/package/react-scrollspy-nav) React component. With it when we click on a navigation link in our navbar the scroll will be automatically activated and the screen will be dragged to the correct section on the page. Other than that, we will be using React Bootstrap components [Navbar](https://react-bootstrap.netlify.app/docs/components/navbar/), Container and [Offcanvas](https://react-bootstrap.netlify.app/docs/components/offcanvas). 
 
 We will be using the Offcanvas component to build a hidden navigation bar. This navigation bar will be shown if our screen size is smaller than 720px, so it will be for mobile sizes. For Bootstrap screen size breakpoints take a look at this link [here](https://getbootstrap.com/docs/5.3/layout/grid/), but the most important thing to remember here is this grid (keep in mind this is the table for the Bootstrap version 5.3):
 
@@ -199,6 +199,8 @@ We declare a new state variable by calling the [useState Hook](https://legacy.re
   </div>
 </div>
 ```
+On our contact form we are using the React Bootstrap components: [Form](https://react-bootstrap.netlify.app/docs/forms/overview/), [Row](https://react-bootstrap.netlify.app/docs/layout/grid), and [Button](https://react-bootstrap.netlify.app/docs/components/buttons). Nothing especially new in this section, just an example of how to use the Form component and create a simple form.
+
 ### Footer
 ```html
 <div className="container my-3">
